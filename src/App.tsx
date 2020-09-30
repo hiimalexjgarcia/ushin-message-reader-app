@@ -41,9 +41,6 @@ function App() {
 	</Modal>
       </div>
 
-      <Swipeable
-        onSwipedRight={handleShowMessagesPanel}
-      >
       <div className="messagePane">
 	<div className="message" style={{ marginLeft: "2rem", padding: "1rem" }}>
 	  <h1>Header</h1>
@@ -51,6 +48,9 @@ function App() {
 	    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, purus vitae varius lacinia, nibh est mollis metus, in tincidunt lorem ligula id lacus. Nunc venenatis nibh ut mauris egestas, vitae tincidunt turpis viverra. Fusce erat lorem, gravida sed mollis in, tempus at turpis. Praesent in justo bibendum, sagittis mauris vel, sollicitudin nulla. Cras facilisis viverra risus at varius. Sed mauris ligula, imperdiet et dictum ac, pellentesque convallis enim. Cras non consectetur nisi, et aliquet ipsum. Aenean tincidunt aliquet tellus et dignissim. Vestibulum volutpat lectus ut arcu condimentum, vitae laoreet ex bibendum. Nam pharetra mollis interdum. Maecenas venenatis dapibus metus, sed interdum arcu hendrerit in.
 	  </p>
 	</div>
+        <Swipeable
+          onSwipedRight={handleShowMessagesPanel}
+        >
 	<Button
 	  variant="primary"
 	  size="sm"
@@ -67,8 +67,8 @@ function App() {
             fill="#fff"
           />
 	</Button>
+        </Swipeable>
       </div>
-      </Swipeable>
 
     </div>
   );
