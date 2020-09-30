@@ -45,7 +45,7 @@ function App() {
         onSwipedRight={handleShowMessagesPanel}
       >
       <div className="messagePane">
-	<div className="message" style={{ marginLeft: "0rem", padding: "1rem" }}>
+	<div className="message" style={{ marginLeft: "2rem", padding: "1rem" }}>
 	  <h1>Header</h1>
 	  <p>
 	    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, purus vitae varius lacinia, nibh est mollis metus, in tincidunt lorem ligula id lacus. Nunc venenatis nibh ut mauris egestas, vitae tincidunt turpis viverra. Fusce erat lorem, gravida sed mollis in, tempus at turpis. Praesent in justo bibendum, sagittis mauris vel, sollicitudin nulla. Cras facilisis viverra risus at varius. Sed mauris ligula, imperdiet et dictum ac, pellentesque convallis enim. Cras non consectetur nisi, et aliquet ipsum. Aenean tincidunt aliquet tellus et dignissim. Vestibulum volutpat lectus ut arcu condimentum, vitae laoreet ex bibendum. Nam pharetra mollis interdum. Maecenas venenatis dapibus metus, sed interdum arcu hendrerit in.
@@ -54,7 +54,7 @@ function App() {
 	<Button
 	  variant="primary"
 	  size="sm"
-	  className="position-fixed h-100 rounded-0 d-none d-sm-none d-md-inline-block"
+	  className="position-fixed h-100 rounded-0"
 	  aria-label="Activate messagesPanel"
 	  onClick={handleShowMessagesPanel}
 	  style={{ top: 0, left: 0 }}
