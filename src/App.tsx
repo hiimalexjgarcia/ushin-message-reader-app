@@ -7,12 +7,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { ReactComponent as ChevronLeft } from "bootstrap-icons/icons/chevron-left.svg";
 
-import { Swipeable } from "react-swipeable";
+import { useSwipeable } from "react-swipeable";
 
 function App() {
   const [messagesPanelIsOpen, setShowMessagesPanel] = useState(false);
   const handleShowMessagesPanel = () => setShowMessagesPanel(true);
   const handleCloseMessagesPanel = () => setShowMessagesPanel(false);
+  const handlers = useSwipeable({
+    onSwipedLeft: () => { handleShowMessagesPanel() }
+  });
 
   return (
     <div className="App">
@@ -48,16 +51,14 @@ function App() {
 	    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, purus vitae varius lacinia, nibh est mollis metus, in tincidunt lorem ligula id lacus. Nunc venenatis nibh ut mauris egestas, vitae tincidunt turpis viverra. Fusce erat lorem, gravida sed mollis in, tempus at turpis. Praesent in justo bibendum, sagittis mauris vel, sollicitudin nulla. Cras facilisis viverra risus at varius. Sed mauris ligula, imperdiet et dictum ac, pellentesque convallis enim. Cras non consectetur nisi, et aliquet ipsum. Aenean tincidunt aliquet tellus et dignissim. Vestibulum volutpat lectus ut arcu condimentum, vitae laoreet ex bibendum. Nam pharetra mollis interdum. Maecenas venenatis dapibus metus, sed interdum arcu hendrerit in.
 	  </p>
 	</div>
-        <Swipeable
-          onSwipedLeft={handleShowMessagesPanel}
-        >
 	<Button
 	  variant="primary"
 	  size="sm"
-	  className="position-fixed h-100 p-0 rounded-0"
+	  className="position-fixed h-auto p-0 rounded-0"
 	  aria-label="Activate messagesPanel"
 	  onClick={handleShowMessagesPanel}
 	  style={{ top: 0, right: 0 }}
+          {...handlers}
 	>
           <ChevronLeft
             width="1em"
@@ -67,7 +68,6 @@ function App() {
             fill="#fff"
           />
 	</Button>
-        </Swipeable>
       </div>
 
     </div>
