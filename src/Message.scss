@@ -1,0 +1,10 @@
+@import '~bootstrap/scss/bootstrap';
+
+.Message {
+}
+
+@include media-breakpoint-up(sm) {
+  .Message .row {
+    overflow-y: hidden;
+  }
+}

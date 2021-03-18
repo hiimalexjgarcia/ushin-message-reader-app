@@ -8,17 +8,18 @@
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
-    "bootstrap": "^4.5.3",
-    "bootstrap-icons": "^1.1.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.0",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
-    "react-bootstrap": "^1.4.0",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.0",
-    "react-swipeable": "^6.0.0",
-    "typescript": "^4.0.3",
-    "web-vitals": "^0.2.4"
+    "react-scripts": "4.0.3",
+    "react-swipeable": "^6.1.0",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "ts-standard": "^10.0.0"
   }
 }
