@@ -1,13 +1,13 @@
 import React from 'react'
-import './Message.scss'
+import './Screen.scss'
 
 import Region from './Region'
 
-function Message (props: { style: any }): any {
+function Screen (props: { style: any }): any {
   const style = props.style
 
   return (
-    <div className='Message' style={style}>
+    <div className='Screen' style={style}>
       <div className='row'>
         <Region />
         <Region />
@@ -27,4 +27,4 @@ function Message (props: { style: any }): any {
   )
 }
 
-export default Message
+export default Screen
