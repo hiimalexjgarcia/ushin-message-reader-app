@@ -3,9 +3,3 @@
 .Region {
   @extend .col-sm;
 }
-
-@include media-breakpoint-up(sm) {
-  .Region {
-    overflow-y: scroll;
-  }
-}

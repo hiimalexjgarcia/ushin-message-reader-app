@@ -1,0 +1,7 @@
+@import '~bootstrap/scss/bootstrap';
+
+.Point {}
+
+@include media-breakpoint-up(sm) {
+  .Point {}
+}

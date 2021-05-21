@@ -1,8 +1,9 @@
 import React from 'react'
 import './Region.scss'
 
-import { ReactComponent as Plus } from 'bootstrap-icons/icons/plus.svg'
+import Point from './Point'
 
+import { ReactComponent as Plus } from 'bootstrap-icons/icons/plus.svg'
 
 function Region (): any {
   return (
@@ -25,48 +26,13 @@ function Region (): any {
           </li>
         </ul>
       </nav>
-      <details>
-        <summary>Heading</summary>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, purus vitae varius lacinia
-        </p>
-      </details>
-      <details>
-        <summary>Heading</summary>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, purus vitae varius lacinia
-        </p>
-      </details>
-      <details>
-        <summary>Heading</summary>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, purus vitae varius lacinia
-        </p>
-      </details>
-      <details>
-        <summary>Heading</summary>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, purus vitae varius lacinia
-        </p>
-      </details>
-      <details>
-        <summary>Heading</summary>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, purus vitae varius lacinia
-        </p>
-      </details>
-      <details>
-        <summary>Heading</summary>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, purus vitae varius lacinia
-        </p>
-      </details>
-      <details>
-        <summary>Heading</summary>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, purus vitae varius lacinia
-        </p>
-      </details>
+      <Point />
+      <Point />
+      <Point />
+      <Point />
+      <Point />
+      <Point />
+      <Point />
     </div>
   )
 }

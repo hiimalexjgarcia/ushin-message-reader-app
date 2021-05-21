@@ -1,7 +1,1 @@
 @import '~bootstrap/scss/bootstrap';
-
-@include media-breakpoint-up(sm) {
-  .Screen .row {
-    overflow-y: hidden;
-  }
-}
